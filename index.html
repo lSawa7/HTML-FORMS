@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informations</title>
+  </head>
+  <body>
+    <form 
+    action
+      name="user-info"
+      enctype="multipart/form-data"
+      method="POST"
+    >
+      <fieldset>
+        <legend>Form</legend>
+        <label for="user">UserName</label>
+        <input
+          type="text"
+          minlength="5"
+          maxlength="20"
+          autofocus
+          placeholder="Enter Your Name"
+          id="user"
+          required
+        />
+        <label for="emil">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter Your Email"
+          readonly
+          value="o@o.com"
+          required
+        />
+        <input type="hidden" value="b92f1fc2fce391ad7af633723afd3055" />
+        <input type="reset" value="Empty" />
+        <input type="submit" value="Send" />
+      </fieldset>
+    </form>
+    <br />
+    <form action="index.html" method="GET" name="userFile" target="_blank">
+      <fieldset>
+        <legend>UploadFile</legend>
+        <hr />
+        <label for="src">Serch</label>
+        <input
+          type="search"
+          required
+          autofocus
+          placeholder=" Enter A Search Word"
+          id="src"
+        />
+        <br />
+        <br />
+        <label for="file">UploadFile</label>
+        <input type="file" id="file" />  <!-- Auto enctype -->
+        <br />
+        <br />
+        <label for="url">URL</label>
+        <input type="url" id="url" />
+        <hr />
+        <input type="submit" value="Send" />
+        <input type="reset" value="Empty" />
+      </fieldset>
+    </form>
+    <br />
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/ug0L5S2Qzwg?si=zNagDr5LZ--P-0Ic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <form name="Date" method="post" name="userDate">
+      <fieldset>
+        <legend>Date</legend>
+        <label for="date-one">Date</label>
+        <input type="date" value="1982-10-25" id="date-one" />
+        <hr />
+        <label for="date-two">Month</label>
+        <input type="month" value="1982-10" id="date-two" />
+        <hr />
+        <input type="submit" value="Send" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
